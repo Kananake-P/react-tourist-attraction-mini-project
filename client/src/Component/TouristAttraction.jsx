@@ -8,7 +8,7 @@ function TouristAttraction() {
 
   const getTouristData = async () => {
     const touristDataFromServer = await axios.get(
-      `http://react-tourist-attraction-mini-project-i9xq.vercel.app=${searchText}`
+      `http://react-tourist-attraction-mini-project-i9xq.vercel.app`
     );
     setTourist(touristDataFromServer.data.data);
   };
